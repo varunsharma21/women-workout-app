@@ -8,15 +8,26 @@ import {
   Text,
   View,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 function LandingScreen() {
   const ctx = useContext(workoutContext);
   const { workoutPlans, isLoading } = ctx;
+  const navigation = useNavigation();
+
+  const loseWeightAndFatWorkoutPlan = workoutPlans[0];
+  const getTonedBodyWorkoutPlan = workoutPlans[1];
+
+  console.log(loseWeightAndFatWorkoutPlan?.name);
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.container}>
-        <Pressable onPress={() => console.log("Pressed!")}>
+        <Pressable
+          onPress={() =>
+            navigation.navigate("DayScreen", loseWeightAndFatWorkoutPlan)
+          }
+        >
           <ImageBackground
             style={styles.image}
             resizeMode="cover"

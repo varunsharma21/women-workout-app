@@ -8,6 +8,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ReportsScreen from "./screens/ReportsScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import { Ionicons } from "@expo/vector-icons";
+import DaysScreen from "./screens/DaysScreen";
+import ExercisesScreen from "./screens/ExercisesScreen";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -61,6 +63,16 @@ export default function App() {
             name="Workout"
             component={BottomTabs}
             options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="DayScreen"
+            component={DaysScreen}
+            // options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="ExercisesScreen"
+            component={ExercisesScreen}
+            // options={{ headerShown: false }}
           />
         </Stack.Navigator>
       </NavigationContainer>
