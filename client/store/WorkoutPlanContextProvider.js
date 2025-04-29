@@ -44,18 +44,21 @@ function WorkoutPlanContextProvider({ children }) {
   };
 
   const fetchWorkoutPlans = async () => {
+    console.log("Fetching Started...");
     setWorkoutPlansLoading(true);
     try {
+      console.log("In try block");
       const response = await fetch(
         "http://192.168.29.224:5500/api/v1/workouts/"
       );
 
       if (!response.ok) {
+        console.log("response is not ok", response.status);
         throw new Error("Something is wrong with workout plans!");
       }
 
-      const data = await response.json();
       console.log("Hi from workout fetcher");
+      const data = await response.json();
 
       const transformedData = data.data.workoutPlans.map((workoutPlan) => {
         return {
@@ -66,6 +69,7 @@ function WorkoutPlanContextProvider({ children }) {
         };
       });
       setWorkoutPlans(transformedData);
+      console.log("Workouts fetched!");
     } catch (err) {
       setWorkoutPlanError(err.message);
     }

@@ -19,15 +19,6 @@ function SettingsScreen() {
             </Text>
           </Fragment>
         ))}
-
-        {/* {workoutPlans?.[0]?.days?.[0]?.exercises?.map((exercise, idx) => (
-          <>
-            <DemoLottieFileCard lottieUrl={exercise?.exerciseId?.lottieLink} />
-            <Text key={idx}>
-              {exercise?.exerciseId?.exerciseName || "Exercise not Found"}
-            </Text>
-          </>
-        ))} */}
       </View>
     </ScrollView>
   );

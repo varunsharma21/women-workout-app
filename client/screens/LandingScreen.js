@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useCallback, useContext } from "react";
 import { workoutContext } from "../store/WorkoutPlanContextProvider";
 import {
   ImageBackground,
@@ -6,9 +6,12 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  useColorScheme,
   View,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { posters, windowWidth } from "../constants";
+// import { StatusBar } from "expo-status-bar";
 
 function LandingScreen() {
   const ctx = useContext(workoutContext);
@@ -16,49 +19,90 @@ function LandingScreen() {
   const navigation = useNavigation();
 
   const loseWeightAndFatWorkoutPlan = workoutPlans[0];
-  const getTonedBodyWorkoutPlan = workoutPlans[1];
+  const getTonedBodyWorkoutPlan = workoutPlans[0];
 
   console.log(loseWeightAndFatWorkoutPlan?.name);
 
   return (
-    <ScrollView showsVerticalScrollIndicator={false}>
-      <View style={styles.container}>
-        <Pressable
-          onPress={() =>
-            navigation.navigate("DayScreen", loseWeightAndFatWorkoutPlan)
-          }
-        >
-          <ImageBackground
-            style={styles.image}
-            resizeMode="cover"
-            source={require("./../assets/images/lose-weight.png")}
-            imageStyle={styles.image}
+    <>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Text style={styles.workoutPlansText}>Women Workout</Text>
+        <View style={styles.container}>
+          <Pressable
+            style={styles.pressableContainer}
+            onPress={() =>
+              navigation.navigate("DayScreen", {
+                loseWeightAndFatWorkoutPlan,
+                image: posters.loseWeight,
+              })
+            }
           >
-            <Text>hiiiiii</Text>
-          </ImageBackground>
-        </Pressable>
-        <Pressable onPress={() => console.log("Pressed!")}>
-          <ImageBackground
-            style={styles.image}
-            resizeMode="cover"
-            source={require("./../assets/images/strength-training.png")}
-            imageStyle={styles.image}
+            <ImageBackground
+              style={styles.image}
+              resizeMode="cover"
+              source={posters.loseWeight}
+              imageStyle={styles.image}
+            >
+              <Text>hiiiiii</Text>
+            </ImageBackground>
+          </Pressable>
+          <Pressable
+            style={styles.pressableContainer}
+            onPress={() =>
+              navigation.navigate("DayScreen", {
+                loseWeightAndFatWorkoutPlan,
+                image: posters.tonedBody,
+              })
+            }
           >
-            <Text>hiiiiii</Text>
-          </ImageBackground>
-        </Pressable>
-        <Pressable onPress={() => console.log("Pressed!")}>
-          <ImageBackground
-            style={styles.image}
-            resizeMode="cover"
-            source={require("./../assets/images/thigh-training.png")}
-            imageStyle={styles.image}
+            <ImageBackground
+              style={styles.image}
+              resizeMode="cover"
+              source={posters.tonedBody}
+              imageStyle={styles.image}
+            >
+              <Text>hiiiiii</Text>
+            </ImageBackground>
+          </Pressable>
+          <Pressable
+            style={styles.pressableContainer}
+            onPress={() =>
+              navigation.navigate("DayScreen", {
+                loseWeightAndFatWorkoutPlan,
+                image: posters.thighTraining,
+              })
+            }
           >
-            <Text>hiiiiii</Text>
-          </ImageBackground>
-        </Pressable>
-      </View>
-    </ScrollView>
+            <ImageBackground
+              style={styles.image}
+              resizeMode="cover"
+              source={posters.thighTraining}
+              imageStyle={styles.image}
+            >
+              <Text>hiiiiii</Text>
+            </ImageBackground>
+          </Pressable>
+          <Pressable
+            style={styles.pressableContainer}
+            onPress={() =>
+              navigation.navigate("DayScreen", {
+                loseWeightAndFatWorkoutPlan,
+                image: posters.dumbbellTraining,
+              })
+            }
+          >
+            <ImageBackground
+              style={styles.image}
+              resizeMode="cover"
+              source={posters.dumbbellTraining}
+              imageStyle={styles.image}
+            >
+              <Text>hiiiiii</Text>
+            </ImageBackground>
+          </Pressable>
+        </View>
+      </ScrollView>
+    </>
   );
 }
 
@@ -69,27 +113,21 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: 25,
+  },
+  workoutPlansText: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginTop: 40,
+    marginLeft: (windowWidth - 330) / 2,
   },
   image: {
     width: 330,
     height: 220,
-    borderRadius: 10,
-    marginBottom: 25,
+    borderRadius: 5,
+  },
+  pressableContainer: {
+    overflow: "hidden",
+    borderRadius: 5,
+    marginTop: 15,
   },
 });
-
-// if (workoutPlans?.[0]?.days?.[0]?.exercises?.[0]?.exerciseId) {
-//   console.log(
-//     "workout: ",
-//     workoutPlans[0].days[7].exercises[0]?.exerciseId.exerciseName
-//   );
-// }
-
-// return (
-//   <View>
-//     {workoutPlans?.[0]?.days?.[29]?.exercises?.map((exercise, idx) => (
-//       <Text key={idx}>{exercise.exerciseId?.exerciseName}</Text>
-//     ))}
-//   </View>
-// );
