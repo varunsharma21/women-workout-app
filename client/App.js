@@ -12,10 +12,15 @@ import SettingsScreen from "./screens/SettingsScreen";
 import { Ionicons } from "@expo/vector-icons";
 import DaysScreen from "./screens/DaysScreen";
 import ExercisesScreen from "./screens/ExercisesScreen";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import DemoScreen from "./screens/DemoScreen";
 import UserInfoFormScreen from "./screens/UserInfoFormScreen";
 import { userInfoContext } from "./store/UserInfoContextProvider";
+import {
+  getFromLocalStorage,
+  removeFromLocalStorage,
+} from "./utils/localStorageUtils";
+import { windowWidth } from "./constants";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -29,12 +34,18 @@ function BottomTabs() {
           name="workouts"
           component={LandingScreen}
           options={{
-            title: "Workouts",
+            headerStyle: { backgroundColor: "white", elevation: 0 },
+            title: "Women Workouts",
             tabBarLabel: "Workouts",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="barbell" size={size} color={color} />
             ),
-            headerShown: false,
+            headerTitleStyle: {
+              fontSize: 20,
+              fontWeight: "600",
+              marginLeft: 0,
+            },
+            // headerShown: false,
           }}
         />
         <BottomTab.Screen
@@ -46,6 +57,13 @@ function BottomTabs() {
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="stats-chart" color={color} size={size} />
             ),
+            headerTitleStyle: {
+              fontSize: 20,
+              fontWeight: "600",
+              marginLeft: 0,
+            },
+            headerStyle: { backgroundColor: "white", elevation: 0 },
+            // headerShown: false,
           }}
         />
         <BottomTab.Screen
@@ -57,7 +75,16 @@ function BottomTabs() {
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="settings" color={color} size={size} />
             ),
-            headerShown: false,
+            headerTitleStyle: {
+              fontSize: 20,
+              fontWeight: "600",
+              marginLeft: 0,
+            },
+            headerStyle: {
+              backgroundColor: "white",
+              elevation: 0,
+            },
+            // headerShown: false,
           }}
         />
       </BottomTab.Navigator>
@@ -66,11 +93,58 @@ function BottomTabs() {
 }
 
 export default function App() {
-  const { setIsFormSubmitted, isFormSubmitted } = useContext(userInfoContext);
+  const { setUserInfo, setIsFormSubmitted, isFormSubmitted } =
+    useContext(userInfoContext);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  /////////////////////// FOR REMOVING 'userInfoLocal' FROM LOCAL STORAGE
+  // useEffect(() => {
+  // const removeLocalStorage = async () => {
+  //   await removeFromLocalStorage("userInfoLocal");
+  // };
+
+  //   removeLocalStorage();
+  // }, []);
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      const userInfo = await getFromLocalStorage("userInfoLocal");
+      // console.log("userInfoLocal: ", userInfo);
+
+      if (userInfo) {
+        setUserInfo({
+          name: userInfo.name,
+          age: userInfo.age,
+          height: userInfo.height,
+          weight: userInfo.weight,
+          waist: userInfo.waist,
+        });
+        setIsFormSubmitted(userInfo.isFormSubmitted);
+      }
+      setIsLoading(false);
+    };
+
+    fetchUserInfo();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <View style={styles.loadingContainer}>
+        {/***************** USE SPLASH SCREEN HERE LATER ********************/}
+        <Text>Loading...</Text>
+      </View>
+    );
+  }
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerTintColor: "white",
+          contentStyle: { backgroundColor: "white" },
+        }}
+      >
         {!isFormSubmitted && (
           <Stack.Screen
             name="UserInfoFormScreen"
@@ -95,5 +169,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

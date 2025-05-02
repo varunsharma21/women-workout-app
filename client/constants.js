@@ -7,7 +7,10 @@ export const posters = {
   dumbbellTraining: require("./assets/images/dumbbell-training-pastel.png"),
 };
 
-export const colors = {};
+export const colors = {
+  dayCardColor: "#faf9f9",
+  exerciseColorCard: "#faf9f9",
+};
 
 export const windowWidth = Dimensions.get("window").width;
 export const windowHeight = Dimensions.get("window").height;

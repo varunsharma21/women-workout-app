@@ -1,6 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { Dimensions, Pressable, StyleSheet, Text, View } from "react-native";
+import { colors } from "../constants";
 
 function DayCard(props) {
   const navigation = useNavigation();
@@ -49,8 +50,9 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     width: windowWidth * 0.9,
     backgroundColor: "white",
-    borderWidth: 0.1,
+    borderWidth: 0.2,
     borderColor: "grey",
+    backgroundColor: colors.dayCardColor,
   },
   container: {
     paddingHorizontal: 20,

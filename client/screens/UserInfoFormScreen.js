@@ -2,15 +2,17 @@ import React, { useContext, useLayoutEffect, useState } from "react";
 import {
   Alert,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
   View,
 } from "react-native";
 import { userInfoContext } from "../store/UserInfoContextProvider";
+import { saveToLocalStorage } from "../utils/localStorageUtils";
 
 function UserInfoFormScreen({ navigation }) {
-  const { userInfo, setUserInfo, setIsFormSubmitted } =
+  const { userInfo, setUserInfo, setIsFormSubmitted, isFormSubmitted } =
     useContext(userInfoContext);
 
   const [localForm, setLocalForm] = useState({
@@ -35,19 +37,33 @@ function UserInfoFormScreen({ navigation }) {
       Alert.alert("Please fill all the fields");
       return;
     }
+    // Isabella
+
+    const userInfoLocal = {
+      name,
+      age,
+      height,
+      weight,
+      waist,
+      isFormSubmitted: true,
+    };
 
     setUserInfo({ name, age, height, weight, waist });
     setIsFormSubmitted(true);
 
-    console.log({ name, age, height, weight, waist });
+    console.log(userInfoLocal);
+    console.log("Storing in local storage...");
 
-    setLocalForm({
-      name: "",
-      age: "",
-      height: "",
-      weight: "",
-      waist: "",
-    });
+    saveToLocalStorage("userInfoLocal", userInfoLocal);
+    navigation.navigate("Workout");
+
+    // setLocalForm({
+    //   name: "",
+    //   age: "",
+    //   height: "",
+    //   weight: "",
+    //   waist: "",
+    // });
   };
 
   useLayoutEffect(() => {
@@ -57,7 +73,7 @@ function UserInfoFormScreen({ navigation }) {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.formGroup}>
         <Text style={styles.label}>Name *</Text>
         <TextInput
@@ -75,6 +91,8 @@ function UserInfoFormScreen({ navigation }) {
           value={localForm.age}
           onChangeText={(text) => handleInputChange("age", text)}
           placeholder="Enter your age"
+          keyboardType="number-pad"
+          maxLength={2}
         />
       </View>
 
@@ -85,6 +103,8 @@ function UserInfoFormScreen({ navigation }) {
           value={localForm.height}
           onChangeText={(text) => handleInputChange("height", text)}
           placeholder="Enter your height in cm"
+          keyboardType="number-pad"
+          maxLength={3}
         />
       </View>
 
@@ -95,6 +115,8 @@ function UserInfoFormScreen({ navigation }) {
           value={localForm.weight}
           onChangeText={(text) => handleInputChange("weight", text)}
           placeholder="Enter your weight in kg"
+          keyboardType="number-pad"
+          maxLength={4}
         />
       </View>
 
@@ -105,13 +127,15 @@ function UserInfoFormScreen({ navigation }) {
           value={localForm.waist}
           onChangeText={(text) => handleInputChange("waist", text)}
           placeholder="Enter your waist in cm"
+          keyboardType="number-pad"
+          maxLength={2}
         />
       </View>
 
       <Pressable style={styles.submitButton} onPress={handleSubmit}>
         <Text style={styles.submitButtonText}>Submit</Text>
       </Pressable>
-    </View>
+    </ScrollView>
   );
 }
 

@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from "react";
+import React, { useCallback, useContext, useLayoutEffect } from "react";
 import { workoutContext } from "../store/WorkoutPlanContextProvider";
 import {
   ImageBackground,
@@ -10,7 +10,7 @@ import {
   View,
 } from "react-native";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
-import { posters, windowWidth } from "../constants";
+import { posters, windowHeight, windowWidth } from "../constants";
 // import { StatusBar } from "expo-status-bar";
 
 function LandingScreen() {
@@ -23,10 +23,20 @@ function LandingScreen() {
 
   console.log(loseWeightAndFatWorkoutPlan?.name);
 
+  // useLayoutEffect(() => {
+  //   navigation.setOptions({
+  //     headerStyle: { marginLeft: (windowWidth - 330) / 2 },
+  //     headerTitleStyle: {
+  //       fontSize: 20,
+  //       fontWeight: "600",
+  //     },
+  //   });
+  // }, []);
+
   return (
     <>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Text style={styles.workoutPlansText}>Women Workout</Text>
+        {/* <Text style={styles.workoutPlansText}>Women Workout</Text> */}
         <View style={styles.container}>
           <Pressable
             style={styles.pressableContainer}
@@ -113,6 +123,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "white",
+    paddingBottom: 20,
   },
   workoutPlansText: {
     fontSize: 22,

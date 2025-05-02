@@ -2,6 +2,7 @@ import LottieView from "lottie-react-native";
 import React from "react";
 import { Dimensions, Pressable, StyleSheet, Text, View } from "react-native";
 import { lottieMap } from "../utils/lottieMap";
+import { colors } from "../constants";
 
 function ExerciseCard(props) {
   const { exerciseInfo } = props;
@@ -39,12 +40,12 @@ const windowWidth = Dimensions.get("window").width;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderWidth: 0.2,
+    borderWidth: 0.1,
     borderRadius: 10,
-    marginBottom: 10,
+    marginBottom: 15,
     width: windowWidth * 0.9,
     height: 100,
-    backgroundColor: "white",
+    backgroundColor: colors.exerciseColorCard,
     overflow: "hidden",
   },
   pressableContainer: {
