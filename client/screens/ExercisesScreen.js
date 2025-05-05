@@ -1,7 +1,17 @@
 import React, { useLayoutEffect } from "react";
-import { Dimensions, FlatList, Image, StyleSheet, View } from "react-native";
+import {
+  Dimensions,
+  FlatList,
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import ExerciseCard from "../components/ExerciseCard";
 import { StatusBar } from "expo-status-bar";
+import { posters } from "../constants";
+import PrimaryButton from "../components/UI/PrimaryButton";
 
 function ExercisesScreen({ route, navigation }) {
   const exercises = route.params;
@@ -16,14 +26,11 @@ function ExercisesScreen({ route, navigation }) {
     });
   }, []);
 
-  // console.log(exercises);
+  console.log("Exercise Screen: ", exercises);
 
   return (
     <View style={styles.container}>
-      <Image
-        source={require("./../assets/images/plank-lady-white.jpg")}
-        style={styles.exerciseImage}
-      />
+      <Image source={posters.plankLady} style={styles.exerciseImage} />
       <FlatList
         data={exercises}
         renderItem={({ item }) => (
@@ -32,6 +39,16 @@ function ExercisesScreen({ route, navigation }) {
         keyExtractor={(item, index) => `${item.exerciseId?._id}-${index}`}
         showsVerticalScrollIndicator={false}
       />
+      {exercises && (
+        <Pressable
+          style={styles.button}
+          onPress={() => navigation.navigate("WorkoutPlayer", exercises)}
+        >
+          <View>
+            <Text style={styles.buttonTitle}>Start</Text>
+          </View>
+        </Pressable>
+      )}
     </View>
   );
 }
@@ -51,5 +68,21 @@ const styles = StyleSheet.create({
     height: windowHeight * 0.25,
     marginBottom: 15,
     inspectRatio: 1,
+  },
+  button: {
+    backgroundColor: "#f46c99",
+    padding: 15,
+    position: "absolute",
+    bottom: 20,
+    left: (windowWidth - windowWidth * 0.8) / 2,
+    width: windowWidth * 0.8,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 35,
+  },
+  buttonTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "white",
   },
 });

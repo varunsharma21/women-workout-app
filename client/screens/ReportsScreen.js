@@ -40,11 +40,15 @@ function ReportsScreen() {
         <View style={styles.detailsContainer}>
           <View style={styles.detail}>
             <Text style={styles.heading}>Height</Text>
-            <Text style={styles.value}>{height}</Text>
+            <Text style={styles.value}>{height} cm</Text>
           </View>
           <View style={styles.detail}>
             <Text style={styles.heading}>Weight</Text>
-            <Text style={styles.value}>{weight}</Text>
+            <Text style={styles.value}>{weight} kg</Text>
+          </View>
+          <View style={styles.detail}>
+            <Text style={styles.heading}>Waist</Text>
+            <Text style={styles.value}>{waist} cm</Text>
           </View>
         </View>
         <View style={styles.bmiContainer}>

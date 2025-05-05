@@ -20,7 +20,8 @@ import {
   getFromLocalStorage,
   removeFromLocalStorage,
 } from "./utils/localStorageUtils";
-import { windowWidth } from "./constants";
+import { windowWidth, colors } from "./constants";
+import WorkoutPlayerScreen from "./screens/WorkoutPlayerScreen";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -158,6 +159,11 @@ export default function App() {
         />
         <Stack.Screen name="DayScreen" component={DaysScreen} />
         <Stack.Screen name="ExercisesScreen" component={ExercisesScreen} />
+        <Stack.Screen
+          name="WorkoutPlayer"
+          component={WorkoutPlayerScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
