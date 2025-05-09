@@ -18,10 +18,11 @@ function LandingScreen() {
   const { workoutPlans, isLoading } = ctx;
   const navigation = useNavigation();
 
-  const loseWeightAndFatWorkoutPlan = workoutPlans[0];
-  const getTonedBodyWorkoutPlan = workoutPlans[0];
+  const loseWeightAndFatWorkoutPlan = workoutPlans?.[0];
+  const getMusclesWorkoutPlan = workoutPlans?.[1];
 
-  console.log(loseWeightAndFatWorkoutPlan?.name);
+  // console.log("LandindScreen: ", loseWeightAndFatWorkoutPlan?.name);
+  // console.log("LandindScreen: ", getMusclesWorkoutPlan?.name);
 
   // useLayoutEffect(() => {
   //   navigation.setOptions({
@@ -60,7 +61,7 @@ function LandingScreen() {
             style={styles.pressableContainer}
             onPress={() =>
               navigation.navigate("DayScreen", {
-                loseWeightAndFatWorkoutPlan,
+                getMusclesWorkoutPlan,
                 image: posters.tonedBody,
               })
             }

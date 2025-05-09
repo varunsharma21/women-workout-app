@@ -26,7 +26,7 @@ function ExercisesScreen({ route, navigation }) {
     });
   }, []);
 
-  console.log("Exercise Screen: ", exercises);
+  // console.log("Exercise Screen: ", exercises);
 
   return (
     <View style={styles.container}>

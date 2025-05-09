@@ -13,8 +13,18 @@ import { posters } from "../constants";
 import { StatusBar } from "expo-status-bar";
 
 function DaysScreen({ route, navigation }) {
-  const workoutPlan = route.params;
-  // console.log(workoutPlan?.loseWeightAndFatWorkoutPlan?.days);
+  const workoutPlanInfo = route.params;
+
+  let workoutPlan;
+
+  // Select a plan here.
+  if (workoutPlanInfo?.loseWeightAndFatWorkoutPlan) {
+    workoutPlan = workoutPlanInfo?.loseWeightAndFatWorkoutPlan;
+    console.log("DaysScreen: ", workoutPlan?.name);
+  } else if (workoutPlanInfo?.getMusclesWorkoutPlan) {
+    workoutPlan = workoutPlanInfo?.getMusclesWorkoutPlan;
+    console.log("DaysScreen: ", workoutPlan?.name);
+  }
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -24,13 +34,15 @@ function DaysScreen({ route, navigation }) {
     });
   }, [navigation]);
 
+  // console.log(workoutPlan);
+
   return (
     <View style={styles.container}>
       <View>
-        <Image style={styles.image} source={workoutPlan.image} />
+        <Image style={styles.image} source={workoutPlanInfo.image} />
       </View>
       <FlatList
-        data={workoutPlan?.loseWeightAndFatWorkoutPlan?.days}
+        data={workoutPlan?.days}
         keyExtractor={(item) => item?.day}
         renderItem={({ item }) => <DayCard dayInfo={item} />}
         showsVerticalScrollIndicator={false}
