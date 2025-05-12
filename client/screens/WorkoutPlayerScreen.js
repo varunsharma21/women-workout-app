@@ -1,15 +1,18 @@
 import LottieView from "lottie-react-native";
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useContext, useEffect, useLayoutEffect, useState } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 import WorkoutScreen from "./WorkoutScreen";
 import { colors } from "./../constants";
+import { completedWorkoutsContext } from "../store/CompletedWorkoutsContextProvider";
 
 function WorkoutPlayerScreen({ route, navigation }) {
-  const exercises = route.params;
-
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const exercises = route.params || [];
+  const { markWorkoutAsCompleted } = useContext(completedWorkoutsContext);
+  const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isResting, setIsResting] = useState(false);
-  const [restTime, setRestTime] = useState(30);
+  const [restTime, setRestTime] = useState(10);
+  const [isWorkoutComplete, setIsWorkoutComplete] = useState(false);
+  const [error, setError] = useState(null);
 
   //   console.log(exercises);
 
@@ -20,40 +23,114 @@ function WorkoutPlayerScreen({ route, navigation }) {
     });
   }, []);
 
+  const handleWorkoutCompletion = () => {
+    try {
+      if (!exercises?.[0]?.workoutPlanId || !exercises?.[0]?.day) {
+        throw new Error("Missing workout information");
+      }
+      markWorkoutAsCompleted(exercises[0].workoutPlanId, exercises[0].day);
+      setIsWorkoutComplete(true);
+    } catch (err) {
+      setError("Failed to mark workout as completed");
+      console.error("Workout completion error:", err);
+    }
+  };
+
   useEffect(() => {
     let timer;
     if (isResting) {
-      if (restTime > 0) {
-        timer = setTimeout(() => setRestTime((prev) => prev - 1), 1000);
-      } else {
-        setIsResting(false);
-        setRestTime(30);
-        setCurrentIndex((prev) => prev + 1);
-      }
+      timer = setInterval(() => {
+        setRestTime((prevTime) => {
+          if (prevTime <= 1) {
+            clearInterval(timer);
+            setIsResting(false);
+            setRestTime(10);
+            setCurrentExerciseIndex((prevIndex) => {
+              const nextIndex = prevIndex + 1;
+              if (nextIndex >= exercises.length) {
+                handleWorkoutCompletion();
+                return prevIndex;
+              }
+              return nextIndex;
+            });
+            return 10;
+          }
+          return prevTime - 1;
+        });
+      }, 1000);
     }
-    return () => clearTimeout(timer);
-  }, [isResting, restTime]);
+    return () => {
+      if (timer) {
+        clearInterval(timer);
+      }
+    };
+  }, [isResting]);
 
-  if (currentIndex >= exercises?.length) {
+  if (error) {
     return (
       <View style={styles.centered}>
-        <Text>Workout Complete 🎉</Text>
+        <Text style={styles.errorText}>{error}</Text>
+        <Button title="Go Back" onPress={() => navigation.goBack()} />
+      </View>
+    );
+  }
+
+  if (isWorkoutComplete) {
+    return (
+      <View style={styles.centered}>
+        <Text style={styles.completionText}>Workout Complete 🎉</Text>
+        <Button
+          title="Back to Home"
+          onPress={() => navigation.navigate("Workout")}
+        />
+      </View>
+    );
+  }
+
+  if (!exercises || exercises.length === 0) {
+    return (
+      <View style={styles.centered}>
+        <Text style={styles.errorText}>No exercises found</Text>
+        <Button title="Go Back" onPress={() => navigation.goBack()} />
+      </View>
+    );
+  }
+
+  if (currentExerciseIndex >= exercises.length) {
+    return (
+      <View style={styles.centered}>
+        <Text style={styles.completionText}>Workout Complete 🎉</Text>
         <Button title="Back to Home" onPress={() => navigation.goBack()} />
       </View>
     );
   }
 
-  const currentExercise = exercises?.[currentIndex]?.exerciseId;
+  const currentExercise = exercises[currentExerciseIndex]?.exerciseId;
+  const isLastExercise = currentExerciseIndex === exercises.length - 1;
 
-  // One will be definitely 'null' amongst reps and time.
-  const reps = exercises?.[currentIndex]?.reps;
-  const time = exercises?.[currentIndex]?.time;
+  if (!currentExercise) {
+    return (
+      <View style={styles.centered}>
+        <Text style={styles.errorText}>Invalid exercise data</Text>
+        <Button title="Go Back" onPress={() => navigation.goBack()} />
+      </View>
+    );
+  }
+
+  const reps = exercises[currentExerciseIndex]?.reps;
+  const time = exercises[currentExerciseIndex]?.time;
 
   const exerciseInfo = {
     currentExercise,
     exercises,
     isResting,
-    setIsResting,
+    setIsResting: (value) => {
+      if (isLastExercise) {
+        handleWorkoutCompletion();
+      } else {
+        setIsResting(value);
+      }
+    },
     reps,
     time,
     restTime,
@@ -103,5 +180,16 @@ const styles = StyleSheet.create({
     borderColor: "#f46c99",
     justifyContent: "center",
     alignItems: "center",
+  },
+  errorText: {
+    color: "red",
+    fontSize: 18,
+    marginBottom: 20,
+    textAlign: "center",
+  },
+  completionText: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
   },
 });

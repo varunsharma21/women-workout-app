@@ -3,6 +3,7 @@ import {
   Dimensions,
   FlatList,
   Image,
+  ImageBackground,
   Pressable,
   StyleSheet,
   Text,
@@ -16,13 +17,20 @@ function DaysScreen({ route, navigation }) {
   const workoutPlanInfo = route.params;
 
   let workoutPlan;
+  let workoutPlanId;
 
   // Select a plan here.
   if (workoutPlanInfo?.loseWeightAndFatWorkoutPlan) {
     workoutPlan = workoutPlanInfo?.loseWeightAndFatWorkoutPlan;
+    workoutPlanId = workoutPlan?.id;
     console.log("DaysScreen: ", workoutPlan?.name);
   } else if (workoutPlanInfo?.getMusclesWorkoutPlan) {
     workoutPlan = workoutPlanInfo?.getMusclesWorkoutPlan;
+    workoutPlanId = workoutPlan?.id;
+    console.log("DaysScreen: ", workoutPlan?.name);
+  } else if (workoutPlanInfo?.demo1) {
+    workoutPlan = workoutPlanInfo?.demo1;
+    workoutPlanId = workoutPlan?.id;
     console.log("DaysScreen: ", workoutPlan?.name);
   }
 
@@ -39,12 +47,32 @@ function DaysScreen({ route, navigation }) {
   return (
     <View style={styles.container}>
       <View>
-        <Image style={styles.image} source={workoutPlanInfo.image} />
+        <ImageBackground
+          style={styles.image}
+          resizeMode="cover"
+          source={workoutPlanInfo.image}
+          imageStyle={styles.image}
+        >
+          <View style={styles.imageTextContainer}></View>
+        </ImageBackground>
+        {/* <Image style={styles.image} source={workoutPlanInfo.image} /> */}
       </View>
       <FlatList
         data={workoutPlan?.days}
         keyExtractor={(item) => item?.day}
-        renderItem={({ item }) => <DayCard dayInfo={item} />}
+        renderItem={({ item }) => (
+          <DayCard
+            dayInfo={item}
+            workoutPlanId={workoutPlanId}
+            onPress={() =>
+              navigation.navigate("ExercisesScreen", {
+                exercises: item.exercises,
+                workoutPlanId,
+                day: item.day,
+              })
+            }
+          />
+        )}
         showsVerticalScrollIndicator={false}
       />
     </View>
@@ -65,6 +93,19 @@ const styles = StyleSheet.create({
     width: windowWidth,
     height: windowHeight * 0.4,
     marginBottom: 25,
-    // aspectRatio: 1,
+  },
+  imageTextContainer: {
+    marginTop: 50,
+    justifyContent: "center",
+    alignItems: "center",
+    // borderWidth: 2,
+    width: "50%",
+  },
+  imageTitle: {
+    marginTop: 5,
+    marginLeft: 0,
+    fontSize: 24,
+    fontWeight: "600",
+    color: "#353535",
   },
 });

@@ -14,7 +14,7 @@ import { posters } from "../constants";
 import PrimaryButton from "../components/UI/PrimaryButton";
 
 function ExercisesScreen({ route, navigation }) {
-  const exercises = route.params;
+  const { exercises, workoutPlanId, day } = route.params;
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -26,7 +26,14 @@ function ExercisesScreen({ route, navigation }) {
     });
   }, []);
 
-  // console.log("Exercise Screen: ", exercises);
+  const handleStartWorkout = () => {
+    const exercisesWithWorkoutInfo = exercises.map((exercise) => ({
+      ...exercise,
+      workoutPlanId,
+      day,
+    }));
+    navigation.navigate("WorkoutPlayer", exercisesWithWorkoutInfo);
+  };
 
   return (
     <View style={styles.container}>
@@ -40,10 +47,7 @@ function ExercisesScreen({ route, navigation }) {
         showsVerticalScrollIndicator={false}
       />
       {exercises && (
-        <Pressable
-          style={styles.button}
-          onPress={() => navigation.navigate("WorkoutPlayer", exercises)}
-        >
+        <Pressable style={styles.button} onPress={handleStartWorkout}>
           <View>
             <Text style={styles.buttonTitle}>Start</Text>
           </View>
@@ -55,30 +59,27 @@ function ExercisesScreen({ route, navigation }) {
 
 export default ExercisesScreen;
 
-const windowWidth = Dimensions.get("window").width;
-const windowHeight = Dimensions.get("window").height;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
+    backgroundColor: "transparent",
   },
   exerciseImage: {
-    width: windowWidth,
-    height: windowHeight * 0.25,
-    marginBottom: 15,
-    inspectRatio: 1,
+    width: "100%",
+    height: 200,
+    marginBottom: 20,
   },
   button: {
     backgroundColor: "#f46c99",
     padding: 15,
-    position: "absolute",
-    bottom: 20,
-    left: (windowWidth - windowWidth * 0.8) / 2,
-    width: windowWidth * 0.8,
+    marginTop: 20,
+    width: "70%",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 35,
+    alignSelf: "center",
+    marginBottom: 20,
   },
   buttonTitle: {
     fontSize: 20,

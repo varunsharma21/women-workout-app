@@ -1,23 +1,26 @@
 import { useNavigation } from "@react-navigation/native";
-import React from "react";
+import React, { useContext } from "react";
 import { Dimensions, Pressable, StyleSheet, Text, View } from "react-native";
 import { colors } from "../constants";
+import { Ionicons } from "@expo/vector-icons";
+import { completedWorkoutsContext } from "../store/CompletedWorkoutsContextProvider";
 
 function DayCard(props) {
   const navigation = useNavigation();
-  const { dayInfo } = props;
+  const { dayInfo, workoutPlanId, onPress } = props;
+  const { isWorkoutCompleted } = useContext(completedWorkoutsContext);
 
   //   console.log(dayInfo);
 
   const isRestDay = dayInfo.dayType === "rest";
+  const isCompleted = isWorkoutCompleted(workoutPlanId, dayInfo.day);
+
   return (
     <View style={styles.wrapper}>
       <Pressable
         style={styles.container}
         android_ripple={{ color: "#ccc" }}
-        onPress={() =>
-          navigation.navigate("ExercisesScreen", dayInfo?.exercises)
-        }
+        onPress={onPress}
       >
         <View style={styles.innerContainer}>
           <View>
@@ -31,7 +34,16 @@ function DayCard(props) {
               <Text style={styles.exerciseCount}>Rest</Text>
             )}
           </View>
-          {isRestDay && <Text style={styles.workoutDay}>Rest</Text>}
+          <View style={styles.rightContainer}>
+            {isRestDay && <Text style={styles.workoutDay}>Rest</Text>}
+            {isCompleted && (
+              <Ionicons
+                name="checkmark-circle"
+                size={24}
+                color={colors.pink100}
+              />
+            )}
+          </View>
         </View>
       </Pressable>
     </View>
@@ -62,6 +74,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+  },
+  rightContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
   },
   dayInfo: {
     fontSize: 18,

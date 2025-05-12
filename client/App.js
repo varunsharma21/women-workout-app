@@ -13,15 +13,14 @@ import { Ionicons } from "@expo/vector-icons";
 import DaysScreen from "./screens/DaysScreen";
 import ExercisesScreen from "./screens/ExercisesScreen";
 import { useContext, useEffect, useState } from "react";
-import DemoScreen from "./screens/DemoScreen";
 import UserInfoFormScreen from "./screens/UserInfoFormScreen";
 import { userInfoContext } from "./store/UserInfoContextProvider";
 import {
   getFromLocalStorage,
   removeFromLocalStorage,
 } from "./utils/localStorageUtils";
-import { windowWidth, colors } from "./constants";
 import WorkoutPlayerScreen from "./screens/WorkoutPlayerScreen";
+import CompletedWorkoutsContextProvider from "./store/CompletedWorkoutsContextProvider";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -35,15 +34,18 @@ function BottomTabs() {
           name="workouts"
           component={LandingScreen}
           options={{
-            headerStyle: { backgroundColor: "white", elevation: 0 },
+            headerStyle: {
+              backgroundColor: "white",
+              elevation: 4,
+            },
             title: "Women Workouts",
             tabBarLabel: "Workouts",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="barbell" size={size} color={color} />
             ),
             headerTitleStyle: {
-              fontSize: 20,
-              fontWeight: "600",
+              fontSize: 22,
+              fontWeight: "bold",
               marginLeft: 0,
             },
             // headerShown: false,
@@ -101,12 +103,13 @@ export default function App() {
 
   /////////////////////// FOR REMOVING 'userInfoLocal' FROM LOCAL STORAGE
   // useEffect(() => {
-  // const removeLocalStorage = async () => {
-  //   await removeFromLocalStorage("userInfoLocal");
-  // };
+  //   const removeLocalStorage = async () => {
+  //     await removeFromLocalStorage("userInfoLocal");
+  //   };
 
   //   removeLocalStorage();
   // }, []);
+  ///////////////////////
 
   useEffect(() => {
     const fetchUserInfo = async () => {
@@ -139,33 +142,38 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerTintColor: "white",
-          contentStyle: { backgroundColor: "white" },
-        }}
-      >
-        {!isFormSubmitted && (
+    <CompletedWorkoutsContextProvider>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerTintColor: "white",
+            contentStyle: { backgroundColor: "white" },
+          }}
+        >
+          {!isFormSubmitted && (
+            <Stack.Screen
+              name="UserInfoFormScreen"
+              component={UserInfoFormScreen}
+              options={{
+                headerShown: false,
+              }}
+            />
+          )}
           <Stack.Screen
-            name="UserInfoFormScreen"
-            component={UserInfoFormScreen}
+            name="Workout"
+            component={BottomTabs}
+            options={{ headerShown: false }}
           />
-        )}
-        <Stack.Screen
-          name="Workout"
-          component={BottomTabs}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen name="DayScreen" component={DaysScreen} />
-        <Stack.Screen name="ExercisesScreen" component={ExercisesScreen} />
-        <Stack.Screen
-          name="WorkoutPlayer"
-          component={WorkoutPlayerScreen}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+          <Stack.Screen name="DayScreen" component={DaysScreen} />
+          <Stack.Screen name="ExercisesScreen" component={ExercisesScreen} />
+          <Stack.Screen
+            name="WorkoutPlayer"
+            component={WorkoutPlayerScreen}
+            options={{ headerShown: false }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </CompletedWorkoutsContextProvider>
   );
 }
 

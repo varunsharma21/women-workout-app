@@ -56,14 +56,6 @@ function UserInfoFormScreen({ navigation }) {
 
     saveToLocalStorage("userInfoLocal", userInfoLocal);
     navigation.navigate("Workout");
-
-    // setLocalForm({
-    //   name: "",
-    //   age: "",
-    //   height: "",
-    //   weight: "",
-    //   waist: "",
-    // });
   };
 
   useLayoutEffect(() => {
@@ -74,66 +66,67 @@ function UserInfoFormScreen({ navigation }) {
 
   return (
     <ScrollView style={styles.container}>
+      <Text style={styles.title}>Let Us Know You</Text>
       <View style={styles.formGroup}>
-        <Text style={styles.label}>Name *</Text>
+        <Text style={styles.label}>Name</Text>
         <TextInput
           style={styles.input}
           value={localForm.name}
           onChangeText={(text) => handleInputChange("name", text)}
-          placeholder="Enter your name"
+          placeholder="Full name"
         />
       </View>
 
       <View style={styles.formGroup}>
-        <Text style={styles.label}>Age *</Text>
+        <Text style={styles.label}>Age</Text>
         <TextInput
           style={styles.input}
           value={localForm.age}
           onChangeText={(text) => handleInputChange("age", text)}
-          placeholder="Enter your age"
+          placeholder="Enter age"
           keyboardType="number-pad"
           maxLength={2}
         />
       </View>
 
       <View style={styles.formGroup}>
-        <Text style={styles.label}>Height *</Text>
+        <Text style={styles.label}>Height</Text>
         <TextInput
           style={styles.input}
           value={localForm.height}
           onChangeText={(text) => handleInputChange("height", text)}
-          placeholder="Enter your height in cm"
+          placeholder="Height in cm"
           keyboardType="number-pad"
           maxLength={3}
         />
       </View>
 
       <View style={styles.formGroup}>
-        <Text style={styles.label}>Weight *</Text>
+        <Text style={styles.label}>Weight</Text>
         <TextInput
           style={styles.input}
           value={localForm.weight}
           onChangeText={(text) => handleInputChange("weight", text)}
-          placeholder="Enter your weight in kg"
+          placeholder="Weight in kg"
           keyboardType="number-pad"
           maxLength={4}
         />
       </View>
 
       <View style={styles.formGroup}>
-        <Text style={styles.label}>Waist *</Text>
+        <Text style={styles.label}>Waist</Text>
         <TextInput
           style={styles.input}
           value={localForm.waist}
           onChangeText={(text) => handleInputChange("waist", text)}
-          placeholder="Enter your waist in cm"
+          placeholder="Waist in cm"
           keyboardType="number-pad"
           maxLength={2}
         />
       </View>
 
       <Pressable style={styles.submitButton} onPress={handleSubmit}>
-        <Text style={styles.submitButtonText}>Submit</Text>
+        <Text style={styles.submitButtonText}>Make Me Stronger!</Text>
       </Pressable>
     </ScrollView>
   );
@@ -147,18 +140,25 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#fff",
   },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginTop: 30,
+    marginBottom: 20,
+  },
   formGroup: {
     marginBottom: 15,
   },
   label: {
     fontSize: 16,
+    fontWeight: "400",
     marginBottom: 5,
     color: "#333",
   },
   input: {
     borderWidth: 1,
     borderColor: "#ddd",
-    borderRadius: 5,
+    borderRadius: 25,
     padding: 10,
     fontSize: 16,
     backgroundColor: "#fff",
@@ -168,15 +168,15 @@ const styles = StyleSheet.create({
     textAlignVertical: "top",
   },
   submitButton: {
-    backgroundColor: "#007AFF",
+    backgroundColor: "#f46c99",
     padding: 15,
-    borderRadius: 5,
-    alignItems: "center",
     marginTop: 20,
-    marginBottom: 40,
-    width: "40%",
+    width: "80%",
     justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 35,
     alignSelf: "center",
+    marginBottom: 20,
   },
   submitButtonText: {
     color: "#fff",

@@ -20,6 +20,7 @@ function LandingScreen() {
 
   const loseWeightAndFatWorkoutPlan = workoutPlans?.[0];
   const getMusclesWorkoutPlan = workoutPlans?.[1];
+  const demo1 = workoutPlans?.[2];
 
   // console.log("LandindScreen: ", loseWeightAndFatWorkoutPlan?.name);
   // console.log("LandindScreen: ", getMusclesWorkoutPlan?.name);
@@ -37,49 +38,57 @@ function LandingScreen() {
   return (
     <>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {/* <Text style={styles.workoutPlansText}>Women Workout</Text> */}
         <View style={styles.container}>
-          <Pressable
-            style={styles.pressableContainer}
-            onPress={() =>
-              navigation.navigate("DayScreen", {
-                loseWeightAndFatWorkoutPlan,
-                image: posters.loseWeight,
-              })
-            }
+          {/* <Text style={styles.heading}>Women Workout</Text> */}
+          <Text style={styles.workoutPlansText}>FULL BODY WORKOUT</Text>
+          <ScrollView
+            style={styles.horizontalListContainer}
+            horizontal
+            showsHorizontalScrollIndicator={false}
           >
-            <ImageBackground
-              style={styles.image}
-              resizeMode="cover"
-              source={posters.loseWeight}
-              imageStyle={styles.image}
+            <Pressable
+              style={styles.pressableContainer}
+              onPress={() =>
+                navigation.navigate("DayScreen", {
+                  loseWeightAndFatWorkoutPlan,
+                  image: posters.loseWeight,
+                })
+              }
             >
-              <Text>hiiiiii</Text>
-            </ImageBackground>
-          </Pressable>
+              <ImageBackground
+                style={styles.image}
+                resizeMode="cover"
+                source={posters.loseWeight}
+                imageStyle={styles.image}
+              >
+                <Text>hiiiiii</Text>
+              </ImageBackground>
+            </Pressable>
+            <Pressable
+              style={styles.pressableContainer}
+              onPress={() =>
+                navigation.navigate("DayScreen", {
+                  getMusclesWorkoutPlan,
+                  image: posters.tonedBody,
+                })
+              }
+            >
+              <ImageBackground
+                style={styles.image}
+                resizeMode="cover"
+                source={posters.tonedBody}
+                imageStyle={styles.image}
+              >
+                <Text>hiiiiii</Text>
+              </ImageBackground>
+            </Pressable>
+          </ScrollView>
+          <Text style={styles.workoutPlansText}>LEGS WORKOUT</Text>
           <Pressable
             style={styles.pressableContainer}
             onPress={() =>
               navigation.navigate("DayScreen", {
-                getMusclesWorkoutPlan,
-                image: posters.tonedBody,
-              })
-            }
-          >
-            <ImageBackground
-              style={styles.image}
-              resizeMode="cover"
-              source={posters.tonedBody}
-              imageStyle={styles.image}
-            >
-              <Text>hiiiiii</Text>
-            </ImageBackground>
-          </Pressable>
-          <Pressable
-            style={styles.pressableContainer}
-            onPress={() =>
-              navigation.navigate("DayScreen", {
-                loseWeightAndFatWorkoutPlan,
+                demo1,
                 image: posters.thighTraining,
               })
             }
@@ -93,6 +102,7 @@ function LandingScreen() {
               <Text>hiiiiii</Text>
             </ImageBackground>
           </Pressable>
+          <Text style={styles.workoutPlansText}>ARM WORKOUT</Text>
           <Pressable
             style={styles.pressableContainer}
             onPress={() =>
@@ -122,25 +132,43 @@ export default LandingScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
     backgroundColor: "white",
-    paddingBottom: 20,
+    paddingTop: 0,
+    paddingBottom: 50,
+    paddingLeft: 30,
+  },
+  heading: {
+    paddingTop: 40,
+    fontSize: 24,
+    fontWeight: "bold",
   },
   workoutPlansText: {
-    fontSize: 22,
-    fontWeight: "bold",
-    marginTop: 40,
-    marginLeft: (windowWidth - 330) / 2,
+    fontSize: 16,
+    fontWeight: "500",
+    marginTop: 35,
+    marginBottom: 10,
+
+    color: "#424242",
   },
   image: {
-    width: 330,
-    height: 220,
+    // width: 330,
+    // height: 220,
+
+    // Smaller image sizes
+    width: 270,
+    height: 180,
     borderRadius: 5,
   },
   pressableContainer: {
     overflow: "hidden",
+    // Smaller image sizes
+    width: 270,
+    height: 180,
     borderRadius: 5,
-    marginTop: 15,
+    marginTop: 0,
+    marginRight: 20,
+  },
+  horizontalListContainer: {
+    flexDirection: "row",
   },
 });
