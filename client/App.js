@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import WorkoutPlanContextProvider, {
   workoutContext,
 } from "./store/WorkoutPlanContextProvider";
@@ -18,9 +18,12 @@ import { userInfoContext } from "./store/UserInfoContextProvider";
 import {
   getFromLocalStorage,
   removeFromLocalStorage,
+  saveToLocalStorage,
 } from "./utils/localStorageUtils";
 import WorkoutPlayerScreen from "./screens/WorkoutPlayerScreen";
 import CompletedWorkoutsContextProvider from "./store/CompletedWorkoutsContextProvider";
+import WorkoutCompleteScreen from "./screens/WorkoutCompleteScreen";
+import { colors } from "./constants";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -28,20 +31,28 @@ const Stack = createNativeStackNavigator();
 function BottomTabs() {
   return (
     <>
-      <StatusBar style="dark" />
-      <BottomTab.Navigator>
+      {/* <StatusBar style="light" backgroundColor="#000" /> */}
+      <BottomTab.Navigator screenOptions={{ tabBarActiveTintColor: "#f46c99" }}>
         <BottomTab.Screen
           name="workouts"
           component={LandingScreen}
           options={{
             headerStyle: {
               backgroundColor: "white",
-              elevation: 4,
+              elevation: 2,
             },
             title: "Women Workouts",
             tabBarLabel: "Workouts",
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="barbell" size={size} color={color} />
+            tabBarIcon: ({ color, size, focused }) => (
+              <Image
+                source={
+                  focused
+                    ? require("./assets/icons/dumbbell.png")
+                    : require("./assets/icons/dumbbell-grey.png")
+                }
+                style={{ width: 28, height: 28 }}
+                resizeMode="contain"
+              />
             ),
             headerTitleStyle: {
               fontSize: 22,
@@ -57,12 +68,20 @@ function BottomTabs() {
           options={{
             title: "Reports",
             tabBarLabel: "Reports",
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="stats-chart" color={color} size={size} />
+            tabBarIcon: ({ color, size, focused }) => (
+              <Image
+                source={
+                  focused
+                    ? require("./assets/icons/reports.png")
+                    : require("./assets/icons/reports-grey.png")
+                }
+                style={{ width: 38, height: 38 }}
+                resizeMode="contain"
+              />
             ),
             headerTitleStyle: {
-              fontSize: 20,
-              fontWeight: "600",
+              fontSize: 22,
+              fontWeight: "bold",
               marginLeft: 0,
             },
             headerStyle: { backgroundColor: "white", elevation: 0 },
@@ -75,17 +94,26 @@ function BottomTabs() {
           options={{
             title: "Settings",
             tabBarLabel: "Settings",
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="settings" color={color} size={size} />
+            tabBarIcon: ({ color, size, focused }) => (
+              <Image
+                source={
+                  focused
+                    ? require("./assets/icons/settings.png")
+                    : require("./assets/icons/settings-grey.png")
+                }
+                style={{ width: 30, height: 30 }}
+                resizeMode="contain"
+              />
             ),
             headerTitleStyle: {
-              fontSize: 20,
-              fontWeight: "600",
+              fontSize: 22,
+              fontWeight: "bold",
               marginLeft: 0,
             },
             headerStyle: {
               backgroundColor: "white",
               elevation: 0,
+              elevation: 2,
             },
             // headerShown: false,
           }}
@@ -101,10 +129,13 @@ export default function App() {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  /////////////////////// FOR REMOVING 'userInfoLocal' FROM LOCAL STORAGE
+  /////////////////////// FOR REMOVING LOCAL STORAGE
   // useEffect(() => {
   //   const removeLocalStorage = async () => {
   //     await removeFromLocalStorage("userInfoLocal");
+  //     await removeFromLocalStorage("workoutCount");
+  //     await removeFromLocalStorage("completedWorkouts");
+  //     await removeFromLocalStorage("weights");
   //   };
 
   //   removeLocalStorage();
@@ -169,6 +200,11 @@ export default function App() {
           <Stack.Screen
             name="WorkoutPlayer"
             component={WorkoutPlayerScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="WorkoutCompleteScreen"
+            component={WorkoutCompleteScreen}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

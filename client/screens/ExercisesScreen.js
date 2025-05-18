@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useCallback, useLayoutEffect } from "react";
 import {
   Dimensions,
   FlatList,
@@ -9,9 +9,14 @@ import {
   View,
 } from "react-native";
 import ExerciseCard from "../components/ExerciseCard";
-import { StatusBar } from "expo-status-bar";
+import {
+  setStatusBarBackgroundColor,
+  setStatusBarStyle,
+  StatusBar,
+} from "expo-status-bar";
 import { posters } from "../constants";
 import PrimaryButton from "../components/UI/PrimaryButton";
+import { useFocusEffect } from "@react-navigation/native";
 
 function ExercisesScreen({ route, navigation }) {
   const { exercises, workoutPlanId, day } = route.params;
@@ -35,25 +40,43 @@ function ExercisesScreen({ route, navigation }) {
     navigation.navigate("WorkoutPlayer", exercisesWithWorkoutInfo);
   };
 
+  useFocusEffect(
+    useCallback(() => {
+      setStatusBarStyle("light");
+      setStatusBarBackgroundColor("black"); // optional for Android
+    }, [])
+  );
+
   return (
-    <View style={styles.container}>
-      <Image source={posters.plankLady} style={styles.exerciseImage} />
-      <FlatList
-        data={exercises}
-        renderItem={({ item }) => (
-          <ExerciseCard exerciseInfo={item?.exerciseId} />
+    <>
+      {/* <StatusBar style="light" backgroundColor="#000" /> */}
+      <View style={styles.container}>
+        <Image source={posters.plankLady} style={styles.exerciseImage} />
+        {exercises && (
+          <FlatList
+            data={exercises}
+            renderItem={({ item }) => (
+              <ExerciseCard exerciseInfo={item?.exerciseId} />
+            )}
+            keyExtractor={(item, index) => `${item.exerciseId?._id}-${index}`}
+            showsVerticalScrollIndicator={false}
+          />
         )}
-        keyExtractor={(item, index) => `${item.exerciseId?._id}-${index}`}
-        showsVerticalScrollIndicator={false}
-      />
-      {exercises && (
-        <Pressable style={styles.button} onPress={handleStartWorkout}>
-          <View>
-            <Text style={styles.buttonTitle}>Start</Text>
+        {exercises && (
+          <Pressable style={styles.button} onPress={handleStartWorkout}>
+            <View>
+              <Text style={styles.buttonTitle}>Start</Text>
+            </View>
+          </Pressable>
+        )}
+        {!exercises && (
+          <View style={styles.restContainer}>
+            <Image source={require("./../assets/icons/tea.png")} />
+            <Text style={styles.restText}>Rest Day</Text>
           </View>
-        </Pressable>
-      )}
-    </View>
+        )}
+      </View>
+    </>
   );
 }
 
@@ -85,5 +108,16 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     color: "white",
+  },
+  restContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  restText: {
+    fontSize: 32,
+    fontWeight: "bold",
+    color: "grey",
+    marginTop: 100,
   },
 });

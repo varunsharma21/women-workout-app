@@ -1,9 +1,10 @@
 import { Dimensions } from "react-native";
 
 export const posters = {
-  loseWeight: require("./assets/images/lose-weight-pastel.png"),
-  tonedBody: require("./assets/images/advance-training-pastel.png"),
-  thighTraining: require("./assets/images/thigh-training-pastel.png"),
+  fullBodyBeginner: require("./assets/images/full-body-beginner-pastel.png"),
+  fullBodyIntermediate: require("./assets/images/full-body-intermediate-pastel.png"),
+  thighTrainingBeginner: require("./assets/images/thigh-training-beginner-pastel.png"),
+  thighTrainingIntermediate: require("./assets/images/thigh-training-intermediate-pastel-2.png"),
   dumbbellTraining: require("./assets/images/dumbbell-training-pastel.png"),
   plankLady: require("./assets/images/plank-lady-white.jpg"),
 };

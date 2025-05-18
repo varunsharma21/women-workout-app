@@ -1,7 +1,15 @@
 import React, { Fragment, useContext } from "react";
-import { StyleSheet, View, Text, ScrollView } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Text,
+  ScrollView,
+  Image,
+  Pressable,
+} from "react-native";
 import { workoutContext } from "../store/WorkoutPlanContextProvider";
 import DemoLottieFileCard from "./../components/DemoLottieFileCard";
+import { windowHeight } from "../constants";
 
 const exercises = [
   "Bicycle Crunches",
@@ -27,25 +35,28 @@ function SettingsScreen() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        {exercises?.map((exercise, idx) => (
-          <Fragment key={idx}>
-            <DemoLottieFileCard exerciseName={exercise} />
-            <Text key={idx}>{exercise || "Exercise not Found"}</Text>
-          </Fragment>
-        ))}
+        <Text style={styles.heading}>Support Us</Text>
+        <Pressable
+          android_ripple={{ color: "#ccc" }}
+          style={styles.innerContainer}
+        >
+          <Image
+            style={styles.icon}
+            source={require("./../assets/icons/star-golden.png")}
+          />
+          <Text style={styles.innerContainerText}>Rate Us</Text>
+        </Pressable>
+        <Pressable
+          android_ripple={{ color: "#ccc" }}
+          style={styles.innerContainer}
+        >
+          <Image
+            style={styles.icon}
+            source={require("./../assets/icons/share-green.png")}
+          />
+          <Text style={styles.innerContainerText}>Share with Friends</Text>
+        </Pressable>
       </View>
-      {/* <View style={styles.container}>
-        {workoutPlans?.[0]?.days?.[18]?.exercises?.map((exercise, idx) => (
-          <Fragment key={idx}>
-            <DemoLottieFileCard
-              exerciseName={exercise?.exerciseId?.exerciseName}
-            />
-            <Text key={idx}>
-              {exercise?.exerciseId?.exerciseName || "Exercise not Found"}
-            </Text>
-          </Fragment>
-        ))}
-      </View> */}
     </ScrollView>
   );
 }
@@ -55,8 +66,29 @@ export default SettingsScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    height: windowHeight,
     backgroundColor: "white",
+    padding: 20,
+  },
+  heading: {
+    fontSize: 18,
+    color: "grey",
+  },
+  innerContainer: {
+    height: windowHeight * 0.08,
+    borderBottomWidth: 0.5,
+    borderColor: "grey",
+    alignItems: "center",
+
+    flexDirection: "row",
+  },
+  icon: {
+    height: 30,
+    width: 30,
+    marginLeft: 10,
+  },
+  innerContainerText: {
+    fontSize: 17,
+    paddingLeft: 10,
   },
 });

@@ -1,6 +1,13 @@
 import { useNavigation } from "@react-navigation/native";
 import React, { useContext } from "react";
-import { Dimensions, Pressable, StyleSheet, Text, View } from "react-native";
+import {
+  Dimensions,
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { colors } from "../constants";
 import { Ionicons } from "@expo/vector-icons";
 import { completedWorkoutsContext } from "../store/CompletedWorkoutsContextProvider";
@@ -30,18 +37,21 @@ function DayCard(props) {
                 {dayInfo?.exercises.length} Exercises
               </Text>
             )}
-            {dayInfo?.exercises?.length === 0 && (
+            {isRestDay && <Text style={styles.exerciseCount}>Rest</Text>}
+            {/* {dayInfo?.exercises?.length === 0 && (
               <Text style={styles.exerciseCount}>Rest</Text>
-            )}
+            )} */}
           </View>
           <View style={styles.rightContainer}>
-            {isRestDay && <Text style={styles.workoutDay}>Rest</Text>}
-            {isCompleted && (
-              <Ionicons
-                name="checkmark-circle"
-                size={24}
-                color={colors.pink100}
+            {isRestDay && (
+              <Image
+                style={styles.restIcon}
+                source={require("./../assets/icons/tea.png")}
               />
+            )}
+            {/* {isRestDay && <Text style={styles.workoutDay}>Rest</Text>} */}
+            {isCompleted && (
+              <Image source={require("./../assets/icons/approve.png")} />
             )}
           </View>
         </View>
@@ -90,5 +100,9 @@ const styles = StyleSheet.create({
   },
   workoutDay: {
     marginTop: 13,
+  },
+  restIcon: {
+    height: 40,
+    width: 40,
   },
 });

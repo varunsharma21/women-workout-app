@@ -4,9 +4,19 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import WorkoutScreen from "./WorkoutScreen";
 import { colors } from "./../constants";
 import { completedWorkoutsContext } from "../store/CompletedWorkoutsContextProvider";
+import WorkoutCompleteScreen from "./WorkoutCompleteScreen";
+import {
+  getFromLocalStorage,
+  saveToLocalStorage,
+} from "../utils/localStorageUtils";
+import { userInfoContext } from "../store/UserInfoContextProvider";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Audio } from "expo-av";
+import { useRef } from "react";
 
 function WorkoutPlayerScreen({ route, navigation }) {
   const exercises = route.params || [];
+  const { workoutCount, setWorkoutCount } = useContext(userInfoContext);
   const { markWorkoutAsCompleted } = useContext(completedWorkoutsContext);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isResting, setIsResting] = useState(false);
@@ -22,6 +32,20 @@ function WorkoutPlayerScreen({ route, navigation }) {
       headerTintColor: "grey",
     });
   }, []);
+
+  const soundRef = useRef(null);
+
+  const playSound = async () => {
+    try {
+      const { sound } = await Audio.Sound.createAsync(
+        require("./../assets/short-whistle-audio.wav")
+      );
+      soundRef.current = sound;
+      await sound.playAsync();
+    } catch (error) {
+      console.error("Error playing sound:", error);
+    }
+  };
 
   const handleWorkoutCompletion = () => {
     try {
@@ -44,6 +68,7 @@ function WorkoutPlayerScreen({ route, navigation }) {
           if (prevTime <= 1) {
             clearInterval(timer);
             setIsResting(false);
+            playSound();
             setRestTime(10);
             setCurrentExerciseIndex((prevIndex) => {
               const nextIndex = prevIndex + 1;
@@ -75,16 +100,30 @@ function WorkoutPlayerScreen({ route, navigation }) {
     );
   }
 
+  useEffect(() => {
+    if (!isWorkoutComplete) return;
+
+    const updateAndFetchWorkoutCount = async () => {
+      try {
+        const storedValue = await AsyncStorage.getItem("workoutCount");
+        const currentCount = storedValue ? parseInt(storedValue) : 0;
+        const newCount = currentCount + 1;
+        await saveToLocalStorage("workoutCount", newCount);
+
+        const updatedCount = await getFromLocalStorage("workoutCount");
+        if (updatedCount !== null) {
+          setWorkoutCount(updatedCount);
+        }
+      } catch (e) {
+        console.error("Error updating workout count", e);
+      }
+    };
+
+    updateAndFetchWorkoutCount();
+  }, [isWorkoutComplete]);
+
   if (isWorkoutComplete) {
-    return (
-      <View style={styles.centered}>
-        <Text style={styles.completionText}>Workout Complete 🎉</Text>
-        <Button
-          title="Back to Home"
-          onPress={() => navigation.navigate("Workout")}
-        />
-      </View>
-    );
+    return <WorkoutCompleteScreen />;
   }
 
   if (!exercises || exercises.length === 0) {
@@ -96,14 +135,14 @@ function WorkoutPlayerScreen({ route, navigation }) {
     );
   }
 
-  if (currentExerciseIndex >= exercises.length) {
-    return (
-      <View style={styles.centered}>
-        <Text style={styles.completionText}>Workout Complete 🎉</Text>
-        <Button title="Back to Home" onPress={() => navigation.goBack()} />
-      </View>
-    );
-  }
+  // if (currentExerciseIndex >= exercises.length) {
+  //   return (
+  //     <View style={styles.centered}>
+  //       <Text style={styles.completionText}>Workout Complete 🎉</Text>
+  //       <Button title="Back to Home" onPress={() => navigation.goBack()} />
+  //     </View>
+  //   );
+  // }
 
   const currentExercise = exercises[currentExerciseIndex]?.exerciseId;
   const isLastExercise = currentExerciseIndex === exercises.length - 1;

@@ -1,17 +1,23 @@
-import React, { useLayoutEffect } from "react";
+import React, {
+  Fragment,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+} from "react";
 import {
   Dimensions,
   FlatList,
-  Image,
   ImageBackground,
-  Pressable,
   StyleSheet,
-  Text,
   View,
 } from "react-native";
 import DayCard from "../components/DayCard";
-import { posters } from "../constants";
-import { StatusBar } from "expo-status-bar";
+import {
+  setStatusBarBackgroundColor,
+  setStatusBarStyle,
+  StatusBar,
+} from "expo-status-bar";
+import { useFocusEffect } from "@react-navigation/native";
 
 function DaysScreen({ route, navigation }) {
   const workoutPlanInfo = route.params;
@@ -32,6 +38,14 @@ function DaysScreen({ route, navigation }) {
     workoutPlan = workoutPlanInfo?.demo1;
     workoutPlanId = workoutPlan?.id;
     console.log("DaysScreen: ", workoutPlan?.name);
+  } else if (workoutPlanInfo?.LegsWorkoutBeginner) {
+    workoutPlan = workoutPlanInfo?.LegsWorkoutBeginner;
+    workoutPlanId = workoutPlan?.id;
+    console.log("DaysScreen: ", workoutPlan?.name);
+  } else if (workoutPlanInfo?.LegsWorkoutIntermediate) {
+    workoutPlan = workoutPlanInfo?.LegsWorkoutIntermediate;
+    workoutPlanId = workoutPlan?.id;
+    console.log("DaysScreen: ", workoutPlan?.name);
   }
 
   useLayoutEffect(() => {
@@ -44,38 +58,47 @@ function DaysScreen({ route, navigation }) {
 
   // console.log(workoutPlan);
 
+  useFocusEffect(
+    useCallback(() => {
+      setStatusBarStyle("light");
+      // setStatusBarBackgroundColor("transparent"); // optional for Android
+    }, [])
+  );
+
   return (
-    <View style={styles.container}>
-      <View>
-        <ImageBackground
-          style={styles.image}
-          resizeMode="cover"
-          source={workoutPlanInfo.image}
-          imageStyle={styles.image}
-        >
-          <View style={styles.imageTextContainer}></View>
-        </ImageBackground>
-        {/* <Image style={styles.image} source={workoutPlanInfo.image} /> */}
+    <Fragment>
+      <View style={styles.container}>
+        <View>
+          <ImageBackground
+            style={styles.image}
+            resizeMode="cover"
+            source={workoutPlanInfo.image}
+            imageStyle={styles.image}
+          >
+            <View style={styles.imageTextContainer}></View>
+          </ImageBackground>
+          {/* <Image style={styles.image} source={workoutPlanInfo.image} /> */}
+        </View>
+        <FlatList
+          data={workoutPlan?.days}
+          keyExtractor={(item) => item?.day}
+          renderItem={({ item }) => (
+            <DayCard
+              dayInfo={item}
+              workoutPlanId={workoutPlanId}
+              onPress={() =>
+                navigation.navigate("ExercisesScreen", {
+                  exercises: item.exercises,
+                  workoutPlanId,
+                  day: item.day,
+                })
+              }
+            />
+          )}
+          showsVerticalScrollIndicator={false}
+        />
       </View>
-      <FlatList
-        data={workoutPlan?.days}
-        keyExtractor={(item) => item?.day}
-        renderItem={({ item }) => (
-          <DayCard
-            dayInfo={item}
-            workoutPlanId={workoutPlanId}
-            onPress={() =>
-              navigation.navigate("ExercisesScreen", {
-                exercises: item.exercises,
-                workoutPlanId,
-                day: item.day,
-              })
-            }
-          />
-        )}
-        showsVerticalScrollIndicator={false}
-      />
-    </View>
+    </Fragment>
   );
 }
 
