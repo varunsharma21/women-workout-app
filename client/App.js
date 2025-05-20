@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Alert, Image, StyleSheet, Text, View } from "react-native";
 import WorkoutPlanContextProvider, {
   workoutContext,
 } from "./store/WorkoutPlanContextProvider";
@@ -24,6 +24,18 @@ import WorkoutPlayerScreen from "./screens/WorkoutPlayerScreen";
 import CompletedWorkoutsContextProvider from "./store/CompletedWorkoutsContextProvider";
 import WorkoutCompleteScreen from "./screens/WorkoutCompleteScreen";
 import { colors } from "./constants";
+import * as Notifications from "expo-notifications";
+
+// Must be done outside root component so that it only run once when app starts.
+Notifications.setNotificationHandler({
+  handleNotification: async () => {
+    return {
+      shouldPlaySound: false,
+      shouldSetBadge: false,
+      shouldShowAlert: true,
+    };
+  },
+});
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -124,6 +136,36 @@ function BottomTabs() {
 }
 
 export default function App() {
+  useEffect(() => {
+    requestNotificationPermission();
+    scheduleNotification();
+  }, []);
+
+  const requestNotificationPermission = async () => {
+    const { status } = await Notifications.requestPermissionsAsync();
+    if (status !== "granted") {
+      Alert.alert(
+        "Notifications Disabled",
+        "Please enable notifications in settings."
+      );
+    }
+  };
+
+  const scheduleNotification = async () => {
+    console.log("Scheduling notification for 120 seconds later...");
+    await Notifications.scheduleNotificationAsync({
+      content: {
+        title: "Time to Exercise Again!",
+        body: "It's been 24 hours. Let's stay consistent!",
+        data: { userName: "Max" },
+      },
+      trigger: {
+        seconds: 120,
+        repeats: false,
+      },
+    });
+  };
+
   const { setUserInfo, setIsFormSubmitted, isFormSubmitted } =
     useContext(userInfoContext);
 
