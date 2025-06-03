@@ -25,6 +25,7 @@ import CompletedWorkoutsContextProvider from "./store/CompletedWorkoutsContextPr
 import WorkoutCompleteScreen from "./screens/WorkoutCompleteScreen";
 import { colors } from "./constants";
 import * as Notifications from "expo-notifications";
+import LottieView from "lottie-react-native";
 
 // Must be done outside root component so that it only run once when app starts.
 Notifications.setNotificationHandler({
@@ -136,35 +137,48 @@ function BottomTabs() {
 }
 
 export default function App() {
-  useEffect(() => {
-    requestNotificationPermission();
-    scheduleNotification();
-  }, []);
-
   const requestNotificationPermission = async () => {
     const { status } = await Notifications.requestPermissionsAsync();
     if (status !== "granted") {
       Alert.alert(
         "Notifications Disabled",
-        "Please enable notifications in settings."
+        "Please enable notifications in settings. And let us make you healthy!"
       );
     }
   };
 
   const scheduleNotification = async () => {
-    console.log("Scheduling notification for 120 seconds later...");
-    await Notifications.scheduleNotificationAsync({
-      content: {
-        title: "Time to Exercise Again!",
-        body: "It's been 24 hours. Let's stay consistent!",
-        data: { userName: "Max" },
-      },
-      trigger: {
-        seconds: 120,
-        repeats: false,
-      },
-    });
+    const now = new Date();
+    const triggerTime = new Date(now.getTime() + 2 * 60 * 1000);
+    try {
+      console.log("Scheduling notification for 120 seconds later...");
+      await Notifications.scheduleNotificationAsync({
+        content: {
+          title: "Time to Exercise Again!",
+          body: "It's been 24 hours. Let's stay consistent!",
+          data: { userName: "Max" },
+        },
+        trigger: triggerTime,
+        // trigger: {
+        //   seconds: 120,
+        //   repeats: false,
+        // },
+      });
+      console.log("Notification scheduled.");
+    } catch (error) {
+      console.log("Failed to schedule notification:", error);
+    }
   };
+
+  useEffect(() => {
+    const setupNotification = async () => {
+      await requestNotificationPermission();
+      await Notifications.cancelAllScheduledNotificationsAsync();
+      await scheduleNotification();
+    };
+
+    setupNotification();
+  }, []);
 
   const { setUserInfo, setIsFormSubmitted, isFormSubmitted } =
     useContext(userInfoContext);
@@ -209,7 +223,12 @@ export default function App() {
     return (
       <View style={styles.loadingContainer}>
         {/***************** USE SPLASH SCREEN HERE LATER ********************/}
-        <Text>Loading...</Text>
+        <LottieView
+          autoPlay
+          loop
+          source={require("./assets/other-animations/loading-animation.json")}
+          style={{ height: 150, width: 150 }}
+        />
       </View>
     );
   }

@@ -49,7 +49,7 @@ function ReportsScreen() {
     setEditing(true);
   };
 
-  const submitNewWeight = () => {
+  const submitNewWeight = async () => {
     const weightValue = parseFloat(newWeight);
     if (!isNaN(weightValue) && weightValue > 0) {
       setUserInfo((prev) => ({ ...prev, weight: weightValue }));

@@ -17,17 +17,22 @@ function UserInfoContextProvider({ children }) {
 
   // Load weights from AsyncStorage on mount
   useEffect(() => {
-    const loadWeights = async () => {
-      try {
-        const storedWeights = await AsyncStorage.getItem("weights");
-        if (storedWeights) {
-          setWeights(JSON.parse(storedWeights));
+    const timeout = setTimeout(() => {
+      const loadWeights = async () => {
+        try {
+          const storedWeights = await AsyncStorage.getItem("weights");
+          if (storedWeights) {
+            setWeights(JSON.parse(storedWeights));
+          }
+        } catch (err) {
+          console.error("Error loading weights from storage:", err);
         }
-      } catch (err) {
-        console.error("Error loading weights from storage:", err);
-      }
-    };
-    loadWeights();
+      };
+      loadWeights();
+    }, 500);
+
+    // Clear timeout if the component unmounts early
+    return () => clearTimeout(timeout);
   }, []);
 
   // When form is submitted and userInfo.weight is available, add to weights and store

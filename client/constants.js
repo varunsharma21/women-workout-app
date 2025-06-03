@@ -12,8 +12,8 @@ export const posters = {
 export const colors = {
   dayCardColor: "#faf9f9",
   exerciseColorCard: "#faf9f9",
-  pink100: "#f46c99 ",
-  pink200: "#EC407A ",
+  pink100: "#f46c99",
+  pink200: "#EC407A",
 };
 
 export const windowWidth = Dimensions.get("window").width;
