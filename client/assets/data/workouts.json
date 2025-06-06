@@ -1,6 +1,6 @@
 {
   "status": "success",
-  "length": 4,
+  "length": 5,
   "data": {
     "workoutPlans": [
       {
@@ -15536,6 +15536,2279 @@
                   "instructions": [
                     "Lean against a wall with thighs parallel to the floor and knees at 90 degrees.",
                     "Hold the position, keeping your back flat and arms relaxed."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "_id": "684280cc2c3c810cb38cd14d",
+        "name": "Arms Workout",
+        "category": "arms-beginner",
+        "days": [
+          {
+            "day": 1,
+            "dayType": "workout",
+            "duration": 9,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "dayType": "workout",
+            "duration": 8,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "dayType": "rest",
+            "duration": 0
+          },
+          {
+            "day": 5,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 6,
+            "dayType": "workout",
+            "duration": 10,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 7,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 8,
+            "dayType": "rest",
+            "duration": 0
+          },
+          {
+            "day": 9,
+            "dayType": "workout",
+            "duration": 8,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 10,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 11,
+            "dayType": "workout",
+            "duration": 10,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 12,
+            "dayType": "rest",
+            "duration": 0
+          },
+          {
+            "day": 13,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 14,
+            "dayType": "workout",
+            "duration": 8,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 15,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 16,
+            "dayType": "rest",
+            "duration": 0
+          },
+          {
+            "day": 17,
+            "dayType": "workout",
+            "duration": 10,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 18,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 19,
+            "dayType": "workout",
+            "duration": 8,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 20,
+            "dayType": "rest",
+            "duration": 0
+          },
+          {
+            "day": 21,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 22,
+            "dayType": "workout",
+            "duration": 10,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 23,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 24,
+            "dayType": "rest",
+            "duration": 0
+          },
+          {
+            "day": 25,
+            "dayType": "workout",
+            "duration": 8,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 26,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 27,
+            "dayType": "workout",
+            "duration": 10,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b25",
+                  "exerciseName": "Standing Dumbbell Curl",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045628/standing-dumbbell-curl_twj2m1.json",
+                  "youtubeVideoId": "CxM4wKfus_Y",
+                  "youtubeLink": "https://www.youtube.com/watch?v=CxM4wKfus_Y",
+                  "instructions": [
+                    "Stand with dumbbells at your sides.",
+                    "Curl them up to your shoulders and lower slowly."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f76adf08b8013ced4c2b21",
+                  "exerciseName": "Dumbbell Triceps Extension",
+                  "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045627/fitness-woman-doing-dumbbell-triceps-extension_x63uxb.json",
+                  "youtubeVideoId": "a1Uanj_vaYA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=a1Uanj_vaYA",
+                  "instructions": [
+                    "Hold a dumbbell overhead with both hands.",
+                    "Lower it behind your head, then extend arms up."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 6,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 28,
+            "dayType": "rest",
+            "duration": 0
+          },
+          {
+            "day": 29,
+            "dayType": "workout",
+            "duration": 11,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              }
+            ]
+          },
+          {
+            "day": 30,
+            "dayType": "workout",
+            "duration": 8,
+            "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e26",
+                  "exerciseName": "Dumbbell Bench Press",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045049/dumbbell-bench-press_jtaqpk.json",
+                  "youtubeVideoId": "GrmETJwvBgY",
+                  "youtubeLink": "https://www.youtube.com/watch?v=GrmETJwvBgY",
+                  "instructions": [
+                    "Lie on a bench holding dumbbells at chest level.",
+                    "Press them up until arms are fully extended."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f7650b5b45ce11646483af",
+                  "exerciseName": "Dumbbell Punch",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045330/dumbbell-punch_gcxpnk.json",
+                  "youtubeVideoId": "NyOGzlXqa8g",
+                  "youtubeLink": "https://www.youtube.com/watch?v=NyOGzlXqa8g",
+                  "instructions": [
+                    "Hold dumbbells at shoulder level.",
+                    "Punch forward alternately while keeping core tight."
+                  ]
+                },
+                "reps": 8,
+                "time": null
+              },
+              {
+                "exerciseId": {
+                  "_id": "67f75edff3a810f7dbb77e2e",
+                  "exerciseName": "Dumbbell Kickbacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1744045328/dumbbell-jumping-squat_auykfu.json",
+                  "youtubeVideoId": "3ao9J4vvEXA",
+                  "youtubeLink": "https://www.youtube.com/watch?v=3ao9J4vvEXA",
+                  "instructions": [
+                    "Bend forward with elbows at 90° holding dumbbells.",
+                    "Extend arms straight back, squeezing triceps."
                   ]
                 },
                 "reps": 8,
