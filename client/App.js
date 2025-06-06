@@ -141,17 +141,17 @@ export default function App() {
     const { status } = await Notifications.requestPermissionsAsync();
     if (status !== "granted") {
       Alert.alert(
-        "Notifications Disabled",
-        "Please enable notifications in settings. And let us make you healthy!"
+        "Stay Notified, Stay Motivated!",
+        "Don't miss a move, switch on notifications and start transforming today!"
       );
     }
   };
 
   const scheduleNotification = async () => {
     const now = new Date();
-    const triggerTime = new Date(now.getTime() + 2 * 60 * 1000);
+    const triggerTime = new Date(now.getTime() + 10 * 60 * 1000);
     try {
-      console.log("Scheduling notification for 120 seconds later...");
+      console.log("Scheduling notification for 10 minutes later...");
       await Notifications.scheduleNotificationAsync({
         content: {
           title: "Time to Exercise Again!",

@@ -59,4 +59,14 @@ export const lottieMap = {
   "Standing Side Bends": require("./../assets/exercises-animation/normal/side-bends.json"),
   "Step-ups": require("./../assets/exercises-animation/normal/step-ups.json"),
   "Wall Sits": require("./../assets/exercises-animation/normal/wall-sits-exercise.json"),
+
+  // Dumbbell exercises
+  "Standing Dumbbell Curl": require("./../assets/exercises-animation/dumbell/standing-dumbbell-curl.json"),
+  "Dumbbell Triceps Extension": require("./../assets/exercises-animation/dumbell/dumbbell-triceps-extension.json"),
+  "Tricep Dumbbell Flick Back": require("./../assets/exercises-animation/dumbell/tricep-dumbbell-flick-back.json"),
+  "Dumbbell Punch": require("./../assets/exercises-animation/dumbell/dumbbell-punch.json"),
+  "Dumbbell Bench Press": require("./../assets/exercises-animation/dumbell/dumbbell-bench-press.json"),
+  "Dumbbell Kickbacks": require("./../assets/exercises-animation/dumbell/dumbbell-kickbacks.json"),
+  "Dumbbell Crunch And Punches": require("./../assets/exercises-animation/dumbell/dumbbell-crunch-and-punches.json"),
+  "Triceps Kickback": require("./../assets/exercises-animation/dumbell/triceps-kickback.json"),
 };

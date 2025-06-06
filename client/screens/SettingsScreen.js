@@ -42,7 +42,7 @@ function SettingsScreen() {
         >
           <Image
             style={styles.icon}
-            source={require("./../assets/icons/star-golden.png")}
+            source={require("./../assets/icons/star.png")}
           />
           <Text style={styles.innerContainerText}>Rate Us</Text>
         </Pressable>
@@ -52,7 +52,7 @@ function SettingsScreen() {
         >
           <Image
             style={styles.icon}
-            source={require("./../assets/icons/share-green.png")}
+            source={require("./../assets/icons/share.png")}
           />
           <Text style={styles.innerContainerText}>Share with Friends</Text>
         </Pressable>

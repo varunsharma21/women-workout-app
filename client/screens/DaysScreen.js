@@ -34,16 +34,22 @@ function DaysScreen({ route, navigation }) {
     workoutPlan = workoutPlanInfo?.getMusclesWorkoutPlan;
     workoutPlanId = workoutPlan?.id;
     console.log("DaysScreen: ", workoutPlan?.name);
-  } else if (workoutPlanInfo?.demo1) {
-    workoutPlan = workoutPlanInfo?.demo1;
-    workoutPlanId = workoutPlan?.id;
-    console.log("DaysScreen: ", workoutPlan?.name);
-  } else if (workoutPlanInfo?.LegsWorkoutBeginner) {
+  }
+  // else if (workoutPlanInfo?.demo1) {
+  //   workoutPlan = workoutPlanInfo?.demo1;
+  //   workoutPlanId = workoutPlan?.id;
+  //   console.log("DaysScreen: ", workoutPlan?.name);
+  // }
+  else if (workoutPlanInfo?.LegsWorkoutBeginner) {
     workoutPlan = workoutPlanInfo?.LegsWorkoutBeginner;
     workoutPlanId = workoutPlan?.id;
     console.log("DaysScreen: ", workoutPlan?.name);
   } else if (workoutPlanInfo?.LegsWorkoutIntermediate) {
     workoutPlan = workoutPlanInfo?.LegsWorkoutIntermediate;
+    workoutPlanId = workoutPlan?.id;
+    console.log("DaysScreen: ", workoutPlan?.name);
+  } else if (workoutPlanInfo?.armWorkoutDumbellBeginner) {
+    workoutPlan = workoutPlanInfo?.armWorkoutDumbellBeginner;
     workoutPlanId = workoutPlan?.id;
     console.log("DaysScreen: ", workoutPlan?.name);
   }

@@ -51,7 +51,10 @@ function DayCard(props) {
             )}
             {/* {isRestDay && <Text style={styles.workoutDay}>Rest</Text>} */}
             {isCompleted && (
-              <Image source={require("./../assets/icons/approve.png")} />
+              <Image
+                style={{ height: 50, width: 50 }}
+                source={require("./../assets/icons/tick.png")}
+              />
             )}
           </View>
         </View>

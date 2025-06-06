@@ -27,6 +27,9 @@ function LandingScreen() {
   const LegsWorkoutBeginner = workoutPlans?.[2];
   const LegsWorkoutIntermediate = workoutPlans?.[3];
 
+  // ARM WORKOUT
+  const armWorkoutDumbellBeginner = workoutPlans?.[4];
+
   // console.log("LandindScreen: ", loseWeightAndFatWorkoutPlan?.name);
   // console.log("LandindScreen: ", getMusclesWorkoutPlan?.name);
 
@@ -149,7 +152,7 @@ function LandingScreen() {
             style={styles.pressableContainer}
             onPress={() =>
               navigation.navigate("DayScreen", {
-                LegsWorkoutIntermediate,
+                armWorkoutDumbellBeginner,
                 image: posters.dumbbellTraining,
               })
             }
@@ -160,7 +163,10 @@ function LandingScreen() {
               source={posters.dumbbellTraining}
               imageStyle={styles.image}
             >
-              <Text>hiiiiii</Text>
+              <View style={styles.posterTextContainer}>
+                <Text style={styles.posterText}>SCULPT</Text>
+                <Text style={styles.posterText}>DUMBBELL</Text>
+              </View>
             </ImageBackground>
           </Pressable>
         </View>

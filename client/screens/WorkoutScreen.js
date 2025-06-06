@@ -14,7 +14,6 @@ function WorkoutScreen(props) {
     reps,
     time,
   } = props.exerciseInfo;
-
   const source = lottieMap[currentExercise?.exerciseName];
 
   return (
@@ -31,10 +30,10 @@ function WorkoutScreen(props) {
       <Text style={styles.title}>{currentExercise?.exerciseName}</Text>
       <Text style={styles.instructionTitle}>Instructions</Text>
       <Text style={styles.instructions}>
-        {currentExercise?.instructions[0]}
+        - {currentExercise?.instructions[0]}
       </Text>
       <Text style={styles.instructions}>
-        {currentExercise?.instructions[1]}
+        - {currentExercise?.instructions[1]}
       </Text>
 
       <Pressable style={styles.nextButton} onPress={() => setIsResting(true)}>
