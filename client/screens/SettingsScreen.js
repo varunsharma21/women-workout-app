@@ -8,26 +8,16 @@ import {
   Pressable,
 } from "react-native";
 import { workoutContext } from "../store/WorkoutPlanContextProvider";
-import DemoLottieFileCard from "./../components/DemoLottieFileCard";
 import { windowHeight } from "../constants";
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
-const exercises = [
-  "Bicycle Crunches",
-  "Burpees Exercise",
-  "Crunches Exercise",
-  "Curtsy Lunges",
-  "Jumping Jacks",
-  "Knee Push-ups",
-  "Lunges Exercise",
-  "Plank Exercise",
-  "Plie Squats",
-  "Side Lunges",
-  "Squat Jumps",
-  "Squats Exercise",
-  "Standing Side Bends",
-  "Step-ups",
-  "Wall Sits",
-];
+const adUnitId = __DEV__
+  ? TestIds.ADAPTIVE_BANNER
+  : "ca-app-pub-9652181513996596/9706505567";
 
 function SettingsScreen() {
   const { workoutPlans } = useContext(workoutContext);
@@ -35,27 +25,39 @@ function SettingsScreen() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.heading}>Support Us</Text>
-        <Pressable
-          android_ripple={{ color: "#ccc" }}
-          style={styles.innerContainer}
-        >
-          <Image
-            style={styles.icon}
-            source={require("./../assets/icons/star.png")}
-          />
-          <Text style={styles.innerContainerText}>Rate Us</Text>
-        </Pressable>
-        <Pressable
-          android_ripple={{ color: "#ccc" }}
-          style={styles.innerContainer}
-        >
-          <Image
-            style={styles.icon}
-            source={require("./../assets/icons/share.png")}
-          />
-          <Text style={styles.innerContainerText}>Share with Friends</Text>
-        </Pressable>
+        <View style={styles.middleContainer}>
+          <Text style={styles.heading}>Support Us</Text>
+          <Pressable
+            android_ripple={{ color: "#ccc" }}
+            style={styles.innerContainer}
+          >
+            <Image
+              style={styles.icon}
+              source={require("./../assets/icons/star.png")}
+            />
+            <Text style={styles.innerContainerText}>Rate Us</Text>
+          </Pressable>
+          <Pressable
+            android_ripple={{ color: "#ccc" }}
+            style={styles.innerContainer}
+          >
+            <Image
+              style={styles.icon}
+              source={require("./../assets/icons/share.png")}
+            />
+            <Text style={styles.innerContainerText}>Share with Friends</Text>
+          </Pressable>
+        </View>
+        <BannerAd
+          style={styles.bannerAd}
+          unitId={adUnitId}
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+          // requestOptions={{
+          //   networkExtras: {
+          //     collapsible: "bottom",
+          //   },
+          // }}
+        />
       </View>
     </ScrollView>
   );
@@ -68,11 +70,13 @@ const styles = StyleSheet.create({
     flex: 1,
     height: windowHeight,
     backgroundColor: "white",
-    padding: 20,
   },
   heading: {
     fontSize: 18,
     color: "grey",
+  },
+  middleContainer: {
+    padding: 20,
   },
   innerContainer: {
     height: windowHeight * 0.08,
@@ -90,5 +94,9 @@ const styles = StyleSheet.create({
   innerContainerText: {
     fontSize: 17,
     paddingLeft: 10,
+  },
+  bannerAd: {
+    padding: 0,
+    height: 450,
   },
 });

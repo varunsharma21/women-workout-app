@@ -1,4 +1,9 @@
-import React, { useCallback, useLayoutEffect } from "react";
+import React, {
+  useCallback,
+  useLayoutEffect,
+  useEffect,
+  useState,
+} from "react";
 import {
   Dimensions,
   FlatList,
@@ -17,9 +22,42 @@ import {
 import { posters } from "../constants";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import { useFocusEffect } from "@react-navigation/native";
+import {
+  InterstitialAd,
+  AdEventType,
+  TestIds,
+} from "react-native-google-mobile-ads";
+
+const adUnitId = __DEV__
+  ? TestIds.INTERSTITIAL
+  : "ca-app-pub-9652181513996596/4853719851";
+
+const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
+  keywords: ["fashion", "clothing"],
+});
 
 function ExercisesScreen({ route, navigation }) {
   const { exercises, workoutPlanId, day } = route.params;
+
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const unsubscribeLoaded = interstitial.addAdEventListener(
+      AdEventType.LOADED,
+      () => {
+        setLoaded(true);
+        interstitial.show();
+      }
+    );
+
+    // Start loading the interstitial straight away
+    interstitial.load();
+
+    // Unsubscribe from events on unmount
+    return () => {
+      unsubscribeLoaded();
+    };
+  }, []);
 
   useLayoutEffect(() => {
     navigation.setOptions({

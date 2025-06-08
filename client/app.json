@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Workout App Prod",
+    "name": "Workout App Dev",
     "slug": "workout_app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -31,6 +31,23 @@
         "projectId": "d3b18e79-89ab-4297-bb0b-ac3bf0569930"
       }
     },
-    "plugins": ["expo-asset", "expo-font"]
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-9652181513996596~2172378904"
+        }
+      ],
+      "expo-asset",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.0.0"
+          }
+        }
+      ]
+    ]
   }
 }
