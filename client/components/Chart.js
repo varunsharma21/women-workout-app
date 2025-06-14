@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Dimensions, StyleSheet, Text, View } from "react-native";
 import { LineChart } from "react-native-chart-kit";
 import { userInfoContext } from "../store/UserInfoContextProvider";
+import { colors } from "../constants";
 
 function Chart() {
   const { weights } = useContext(userInfoContext);
@@ -12,7 +13,7 @@ function Chart() {
       <Text style={styles.title}>Weight</Text>
       <LineChart
         data={{
-          labels: ["week 1", "week 2", "week 3", "week 4", "week 5", "week 6"],
+          labels: ["Time ---->"],
           datasets: [
             {
               data: weights.map((w) => Number(w)),
@@ -25,9 +26,12 @@ function Chart() {
         yAxisSuffix="kg"
         yAxisInterval={1} // optional, defaults to 1
         chartConfig={{
-          backgroundColor: "#e26a00",
-          backgroundGradientFrom: "#fb8c00",
-          backgroundGradientTo: "#ffa726",
+          // backgroundColor: "#e26a00",
+          // backgroundGradientFrom: "#fb8c00",
+          // backgroundGradientTo: "#ffa726",
+          backgroundColor: "#f53977",
+          backgroundGradientFrom: "#f46c99",
+          backgroundGradientTo: "#f18cad",
           decimalPlaces: 2, // optional, defaults to 2dp
           color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
           labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
@@ -37,7 +41,7 @@ function Chart() {
           propsForDots: {
             r: "6",
             strokeWidth: "2",
-            stroke: "#ffa726",
+            stroke: "#f18cad",
           },
         }}
         bezier

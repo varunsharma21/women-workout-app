@@ -19,7 +19,7 @@ import {
   setStatusBarStyle,
   StatusBar,
 } from "expo-status-bar";
-import { posters } from "../constants";
+import { colors, posters } from "../constants";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import { useFocusEffect } from "@react-navigation/native";
 import {
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: "#f46c99",
+    backgroundColor: colors.pink100,
     padding: 15,
     marginTop: 20,
     width: "70%",

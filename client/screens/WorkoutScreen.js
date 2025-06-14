@@ -88,8 +88,7 @@ const styles = StyleSheet.create({
     color: "grey",
   },
   nextButton: {
-    // backgroundColor: colors.pink100,
-    backgroundColor: "#f46c99",
+    backgroundColor: colors.pink100,
     padding: 15,
     marginTop: 20,
     // position: "absolute",

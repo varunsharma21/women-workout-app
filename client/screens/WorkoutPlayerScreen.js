@@ -13,6 +13,7 @@ import { userInfoContext } from "../store/UserInfoContextProvider";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Audio } from "expo-av";
 import { useRef } from "react";
+import RestScreen from "./RestScreen";
 
 function WorkoutPlayerScreen({ route, navigation }) {
   const exercises = route.params || [];
@@ -20,7 +21,7 @@ function WorkoutPlayerScreen({ route, navigation }) {
   const { markWorkoutAsCompleted } = useContext(completedWorkoutsContext);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isResting, setIsResting] = useState(false);
-  const [restTime, setRestTime] = useState(10);
+  const [restTime, setRestTime] = useState(30);
   const [isWorkoutComplete, setIsWorkoutComplete] = useState(false);
   const [error, setError] = useState(null);
 
@@ -69,7 +70,7 @@ function WorkoutPlayerScreen({ route, navigation }) {
             clearInterval(timer);
             setIsResting(false);
             playSound();
-            setRestTime(10);
+            setRestTime(30);
             setCurrentExerciseIndex((prevIndex) => {
               const nextIndex = prevIndex + 1;
               if (nextIndex >= exercises.length) {
@@ -78,7 +79,7 @@ function WorkoutPlayerScreen({ route, navigation }) {
               }
               return nextIndex;
             });
-            return 10;
+            return 30;
           }
           return prevTime - 1;
         });
@@ -178,10 +179,7 @@ function WorkoutPlayerScreen({ route, navigation }) {
   return (
     <View style={styles.centered}>
       {isResting ? (
-        <View style={styles.restingScreen}>
-          <Text style={styles.title}>Rest Time</Text>
-          <Text style={styles.timer}>{restTime}s</Text>
-        </View>
+        <RestScreen restTime={restTime} />
       ) : (
         <WorkoutScreen exerciseInfo={exerciseInfo} />
       )}

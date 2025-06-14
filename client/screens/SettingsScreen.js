@@ -25,7 +25,10 @@ function SettingsScreen() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <View style={styles.middleContainer}>
+        <Text style={styles.temperaryHeading}>
+          Subscription model will be released soon!
+        </Text>
+        {/* <View style={styles.middleContainer}>
           <Text style={styles.heading}>Support Us</Text>
           <Pressable
             android_ripple={{ color: "#ccc" }}
@@ -47,8 +50,8 @@ function SettingsScreen() {
             />
             <Text style={styles.innerContainerText}>Share with Friends</Text>
           </Pressable>
-        </View>
-        <BannerAd
+        </View> */}
+        {/* <BannerAd
           style={styles.bannerAd}
           unitId={adUnitId}
           size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
@@ -57,7 +60,7 @@ function SettingsScreen() {
           //     collapsible: "bottom",
           //   },
           // }}
-        />
+        /> */}
       </View>
     </ScrollView>
   );
@@ -70,6 +73,11 @@ const styles = StyleSheet.create({
     flex: 1,
     height: windowHeight,
     backgroundColor: "white",
+    padding: 20, // temporary
+  },
+  temperaryHeading: {
+    fontSize: 34,
+    color: "grey",
   },
   heading: {
     fontSize: 18,

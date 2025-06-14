@@ -149,13 +149,13 @@ export default function App() {
 
   const scheduleNotification = async () => {
     const now = new Date();
-    const triggerTime = new Date(now.getTime() + 10 * 60 * 1000);
+    const triggerTime = new Date(now.getTime() + 24 * 60 * 60 * 1000);
     try {
-      console.log("Scheduling notification for 10 minutes later...");
+      console.log("Scheduling notification for 24 hours later...");
       await Notifications.scheduleNotificationAsync({
         content: {
-          title: "Time to Exercise Again!",
-          body: "It's been 24 hours. Let's stay consistent!",
+          title: "💪 Time to Move!",
+          body: "Your workout is waiting. Let’s go! 🚀",
           data: { userName: "Max" },
         },
         trigger: triggerTime,
