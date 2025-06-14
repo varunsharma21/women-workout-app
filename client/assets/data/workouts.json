@@ -15,6 +15,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
                   "exerciseName": "Side Crunches Left",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/side-crunches-exercise_rd8kza.json",
@@ -125,6 +140,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877d",
@@ -252,6 +282,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
@@ -386,6 +431,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
                   "exerciseName": "Side Crunches Left",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/side-crunches-exercise_rd8kza.json",
@@ -496,6 +556,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877d",
@@ -623,6 +698,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f6638bea133a283fa8cf65",
@@ -757,6 +847,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f647e061d3d70d82b0e145",
                   "exerciseName": "Box Push Ups",
                   "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045710/box-push-ups-exercise_knlpcv.json",
@@ -884,6 +989,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f6638bea133a283fa8cf63",
                   "exerciseName": "Glute Kick Back Left",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/glute-kick-back-exercise_ghfobn.json",
@@ -1009,6 +1129,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
@@ -1143,6 +1278,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
                   "exerciseName": "Side Crunches Left",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/side-crunches-exercise_rd8kza.json",
@@ -1268,6 +1418,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f6638bea133a283fa8cf6a",
@@ -1412,6 +1577,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
                   "exerciseName": "Side Crunches Left",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/side-crunches-exercise_rd8kza.json",
@@ -1542,6 +1722,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877d",
@@ -1701,6 +1896,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f647e061d3d70d82b0e14c",
                   "exerciseName": "Flutter Kicks",
                   "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045742/flutter-kicks-exercise_ewiwod.json",
@@ -1841,6 +2051,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f6638bea133a283fa8cf6a",
@@ -1990,6 +2215,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
                   "exerciseName": "Side Crunches Left",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/side-crunches-exercise_rd8kza.json",
@@ -2115,6 +2355,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877d",
@@ -2274,6 +2529,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f647e061d3d70d82b0e14c",
                   "exerciseName": "Flutter Kicks",
                   "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045742/flutter-kicks-exercise_ewiwod.json",
@@ -2421,6 +2691,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f6638bea133a283fa8cf6a",
                   "exerciseName": "Mountain Climbers",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/mountain-climber-exercise_kitajp.json",
@@ -2563,6 +2848,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877c",
                   "exerciseName": "Side Crunches Left",
                   "lottieLink": "https://res.cloudinary.com/dovewuimo/raw/upload/v1744045848/side-crunches-exercise_rd8kza.json",
@@ -2688,6 +2988,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f66a0ee3bdd2a6db8e877d",
@@ -2852,6 +3167,21 @@
             "exercises": [
               {
                 "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
+              {
+                "exerciseId": {
                   "_id": "67f647e061d3d70d82b0e14c",
                   "exerciseName": "Flutter Kicks",
                   "lottieLink": "https://res.cloudinary.com/dqhpbfeuc/raw/upload/v1744045742/flutter-kicks-exercise_ewiwod.json",
@@ -2992,6 +3322,21 @@
             "dayType": "workout",
             "duration": 15,
             "exercises": [
+              {
+                "exerciseId": {
+                  "_id": "6819cc003be5299736a3854d",
+                  "exerciseName": "Jumping Jacks",
+                  "lottieLink": "https://res.cloudinary.com/djyglrfxc/raw/upload/v1746510633/jumping-jacks_an5tp9.json",
+                  "youtubeVideoId": "2W4ZNSwoW_4",
+                  "youtubeLink": "https://www.youtube.com/watch?v=2W4ZNSwoW_4",
+                  "instructions": [
+                    "Jump feet out while raising arms overhead, then return to start position.",
+                    "Keep a steady pace and land lightly on your feet."
+                  ]
+                },
+                "reps": 15,
+                "time": null
+              },
               {
                 "exerciseId": {
                   "_id": "67f6638bea133a283fa8cf6a",
