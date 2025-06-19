@@ -142,7 +142,7 @@ function ReportsScreen() {
           </Text>
         </View>
         {/* graph */}
-        <Chart />
+        {/* <Chart /> */}
       </View>
     </ScrollView>
   );
